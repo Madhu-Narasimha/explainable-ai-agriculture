@@ -28,7 +28,7 @@ if uploaded_file is not None:
 
     # Select key features
     features = ['Yield of CT', 'P', 'Tmax', 'Tmin', 'E', 'Tave', 'Years since NT started (yrs)']
-    target = 'Yield change (%)'
+    target = 'Relative yield change'
 
     if all(f in df.columns for f in features) and target in df.columns:
 
